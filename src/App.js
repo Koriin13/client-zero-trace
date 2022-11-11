@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Join from './pages/Join';
 import Chat from './pages/Chat';
 
-const socket = io.connect('http://localhost:3000'); // server will run on 5000 connect to it from here
+const socket = io.connect('https://server-zero-trace.onrender.com'); // server will run on 5000 connect to it from here
 
 
 function App() {
