@@ -1,0 +1,165 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300';
+@import 'https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300;400;500;600&display=swap';
+
+
+body {
+    width:100%;
+    width: 100%;
+    /* Change later */
+    color: #ccd1cf !important;
+}
+#icon {
+    display: block;
+    max-width: 35%;
+    max-height: 35%;
+}
+
+@keyframes vibrate {
+    0% { transform: rotate(0deg); }
+    10% { transform: rotate(-1deg); }
+    20% { transform: rotate(1deg); }
+    30% { transform: rotate(0deg); }
+    40% { transform: rotate(1deg); }
+    50% { transform: rotate(-1deg); }
+    60% { transform: rotate(0deg); }
+    70% { transform: rotate(-1deg); }
+    80% { transform: rotate(1deg); }
+    90% { transform: rotate(0deg); }
+    100% { transform: rotate(-1deg); }
+  }
+
+#icon:hover {
+    animation: vibrate 0.6s;
+  
+    animation-iteration-count: infinite;
+  }
+
+/* JOIN */
+
+.form-floating input {
+    border-style: none;
+    background-color: transparent;
+    border-radius: 0% ;
+    border-bottom: .1em solid #ccd1cf;
+}
+
+.form-control:focus {
+    border-bottom: .1em solid #ccd1cf !important;
+    border-radius: 0% !important;
+    background-color: transparent !important;
+    box-shadow: unset !important;
+}
+
+#form-area {
+    width: 70% !important;
+    
+}
+
+
+#joinOuter {
+    font-family: 'Advent Pro', sans-serif;
+    display: flex;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 30%;
+    background-color: #516173;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    border-radius: .8em;
+    border: .4em solid #acafae  /* #1d1f2b; width style color */
+}
+
+#joinInner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+}
+.form-floating label {
+    padding: 1rem 0.75rem 1rem 0em !important;
+    margin-left: none !important;
+}
+
+.form-floating > .form-control:focus, .form-floating > .form-control:not(:placeholder-shown), .form-floating > .form-control-plaintext:focus, .form-floating > .form-control-plaintext:not(:placeholder-shown) {
+    padding-top: 2rem !important;
+}
+
+/* 
+========================
+        BUTTON 
+========================
+*/
+.btn-three {
+    width: 100%;
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+  }
+  .btn-three::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.1);
+    transition: all 0.3s;
+  }
+  .btn-three:hover::before {
+    opacity: 0 ;
+    transform: scale(0.5,0.5);
+  }
+  .btn-three::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+  }
+  .btn-three:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+  }
+
+#join-btn button {
+    color:#ccd1cf;
+}
+
+p.join-p {
+    font-size: larger;
+}
+
+
+/* 
+========================
+        Background 
+========================
+*/
+
+
+@keyframes animatedBackground {
+    from { background-position: 60% 0%; }
+    to { background-position: 0% 25%; }
+    
+}
+body { 
+
+    background-image: url(../images/Chat_bg_3.png);
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    background-repeat: repeat-y;
+    animation: animatedBackground 40s linear infinite;
+}
