@@ -163,3 +163,17 @@ body {
     background-repeat: repeat-y;
     animation: animatedBackground 40s linear infinite;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .joinOuter {
+        min-width: 100% !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .joinOuter {
+        min-width: 100% !important;
+    }
+}
